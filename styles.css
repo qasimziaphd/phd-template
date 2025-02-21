@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4rem; /* Adds space at the bottom to prevent content overlap */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    float: right; /* Position the image on the right */
+    margin-left: 20px; /* Space between the image and text */
+    border-radius: 50%; /* Optional: makes the image circular */
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Initial styles to hide the footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: left;
+    padding: 1rem 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    transform: translateY(100%); /* Initially hide the footer */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+/* Show the footer when scrolled */
+footer.show {
+    transform: translateY(0); /* Show the footer */
+}
+
+
